@@ -5,11 +5,22 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavHostController
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import com.yeditepe.finalexam.ui.TaskListScreen
+import com.yeditepe.finalexam.ui.TaskItemScreen
+import androidx.compose.material3.Text
+import androidx.compose.material3.MaterialTheme
 
 @Composable
 fun TaskDetailScreen(title: String) {
 
     Column(modifier = Modifier.padding(16.dp)) {
         // TODO 4: Display task title
+        Text(text = title, style = MaterialTheme.typography.titleLarge)
+
+        // TODO 5: Display task details (e.g., description, due date)
+        Text(text = "Task Details")
     }
 }
